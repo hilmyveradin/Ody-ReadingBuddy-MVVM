@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21D62" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CurrentDay" representedClassName="CurrentDay" syncable="YES" codeGenerationType="class">
+        <attribute name="currentDay" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Home" representedClassName="Home" syncable="YES" codeGenerationType="class">
+        <attribute name="daysSpent" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="daysTarget" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="timeSpent" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="timeTarget" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="IsGoalsSelected" representedClassName="IsGoalsSelected" syncable="YES" codeGenerationType="class">
+        <attribute name="isGoalsSelected" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="MyGoals" representedClassName="MyGoals" syncable="YES" codeGenerationType="class">
+        <attribute name="duration" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="endDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="goalsName" optional="YES" attributeType="String"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="Preferences" representedClassName="Preferences" syncable="YES" codeGenerationType="class">
+        <attribute name="hours" optional="YES" attributeType="Transformable" customClassName="[Int]"/>
+        <attribute name="preferencesIndex" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="TimerInterface" representedClassName="TimerInterface" syncable="YES" codeGenerationType="class">
+        <attribute name="currentTimer" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="totalTimer" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Weekdays" representedClassName="Weekdays" syncable="YES" codeGenerationType="class">
+        <attribute name="weekdays" optional="YES" attributeType="Transformable" customClassName="[Int]"/>
+    </entity>
+    <elements>
+        <element name="CurrentDay" positionX="-27" positionY="36" width="128" height="44"/>
+        <element name="Home" positionX="-54" positionY="18" width="128" height="89"/>
+        <element name="IsGoalsSelected" positionX="-36" positionY="45" width="128" height="44"/>
+        <element name="MyGoals" positionX="-63" positionY="-18" width="128" height="89"/>
+        <element name="Preferences" positionX="0" positionY="63" width="128" height="59"/>
+        <element name="TimerInterface" positionX="-27" positionY="27" width="128" height="59"/>
+        <element name="Weekdays" positionX="-18" positionY="45" width="128" height="44"/>
+    </elements>
+</model>

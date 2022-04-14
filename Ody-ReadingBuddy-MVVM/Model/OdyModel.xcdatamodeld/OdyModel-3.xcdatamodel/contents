@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21D62" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Home" representedClassName="Home" syncable="YES" codeGenerationType="class">
+        <attribute name="daysSpent" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="daysTarget" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="timeSpent" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="timeTarget" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="IsGoalsSelected" representedClassName="IsGoalsSelected" syncable="YES" codeGenerationType="class">
+        <attribute name="isGoalsSelected" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="MyGoals" representedClassName="MyGoals" syncable="YES" codeGenerationType="class">
+        <attribute name="duration" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="endDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="goalsName" optional="YES" attributeType="String"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="Preferences" representedClassName="Preferences" syncable="YES" codeGenerationType="class">
+        <attribute name="hours" optional="YES" attributeType="Transformable" customClassName="[Int]"/>
+        <attribute name="preferencesIndex" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="TimerInterface" representedClassName="TimerInterface" syncable="YES" codeGenerationType="class">
+        <attribute name="currentTimer" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <elements>
+        <element name="Home" positionX="117.46484375" positionY="126.2265625" width="128" height="103"/>
+        <element name="IsGoalsSelected" positionX="115.88671875" positionY="50.84375" width="128" height="58"/>
+        <element name="MyGoals" positionX="-63" positionY="-18" width="128" height="89"/>
+        <element name="Preferences" positionX="-65.484375" positionY="150.75390625" width="128" height="59"/>
+        <element name="TimerInterface" positionX="123.078125" positionY="-40.8671875" width="128" height="44"/>
+    </elements>
+</model>

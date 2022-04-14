@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21D62" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Goals" representedClassName="Goals" syncable="YES" codeGenerationType="class">
+        <attribute name="goalsCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="goalsName" optional="YES" attributeType="String"/>
+        <relationship name="goalsToNotification" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Notification" inverseName="notificationToGoals" inverseEntity="Notification"/>
+<<<<<<< HEAD
+        <relationship name="goalsToTimer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ReadingTimer" inverseName="timerToGoals" inverseEntity="ReadingTimer"/>
+=======
+        <relationship name="goalsToTimer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TimerInterface" inverseName="timerToGoals" inverseEntity="TimerInterface"/>
+>>>>>>> master
+    </entity>
+    <entity name="Notification" representedClassName="Notification" syncable="YES" codeGenerationType="class">
+        <attribute name="customDays" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="endDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="preferences" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="notificationToGoals" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Goals" inverseName="goalsToNotification" inverseEntity="Goals"/>
+    </entity>
+<<<<<<< HEAD
+    <entity name="ReadingTimer" representedClassName="ReadingTimer" syncable="YES" codeGenerationType="class">
+=======
+    <entity name="TimerInterface" representedClassName="TimerInterface" syncable="YES" codeGenerationType="class">
+>>>>>>> master
+        <attribute name="duration" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="timerToGoals" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Goals" inverseName="goalsToTimer" inverseEntity="Goals"/>
+    </entity>
+    <elements>
+        <element name="Goals" positionX="-63" positionY="-18" width="128" height="103"/>
+        <element name="Notification" positionX="-288.94921875" positionY="142.09375" width="128" height="104"/>
+<<<<<<< HEAD
+        <element name="ReadingTimer" positionX="142.74609375" positionY="183.8515625" width="128" height="59"/>
+=======
+        <element name="TimerInterface" positionX="142.74609375" positionY="183.8515625" width="128" height="59"/>
+>>>>>>> master
+    </elements>
+</model>
