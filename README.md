@@ -1,9 +1,10 @@
 # Ody-ReadingBuddy
 
-Reading reminder and tracker
+Improved app from my previous project: [Ody-ReadingBuddy](https://github.com/hilmyveradin/Ody-ReadingBuddy)
 
-🧱 Architecture: MVC\
+🧱 Architecture: MVVM\
 🛠 Feature: Save data, local notification, animation bar\
 🔌 Tools: CoreData, UNNotificationCenter, CALayer
 
-💡 Additional: iOS Human Interface Guidelines
+
+💡 Additional: Unit tests, more clean code
